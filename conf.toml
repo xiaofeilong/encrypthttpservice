@@ -1,0 +1,20 @@
+[LogInfo]
+LogFile = "encryptService.log"
+# ErrorLevel : 0; 	WarnLevel : 1;	InfoLevel : 2;	DebugLevel : 3
+LogLevel = 3
+
+[Httpserverinfo]
+Serveraddress = "192.168.217.47:6713"
+
+[Databaseinfo]
+MysqlServer = "127.0.0.1:3306"
+Mysqlusername = "root"
+MysqlPassword = "123456"
+Mysqldbname = "vod"
+MysqlMaxconn = 2
+MysqlMaxidle = 1
+
+[Encrytionkey]
+#key长度需要时AES-128(16bytes)或者AES-256(32bytes)
+Key = "1234567890123456"
+Mode = ["XOR"]  
